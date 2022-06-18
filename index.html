@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="tittle-section">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great but understanding how developers think is
+          invaluable
+        </p>
+      </section>
+      <section class="form-section">
+        <article>
+          <p><span>Try it free 7 days</span> then $20/month, thereafter</p>
+        </article>
+        <form>
+          <div class="form-inputs">
+            <input type="text" placeholder="First Name" required class="form-input"/>
+            <p>First Name cannot be empty</p>
+            <div class="svg svg-1"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.0//EN'  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'><svg height="32" style="overflow:visible;enable-background:new 0 0 32 32" viewBox="0 0 32 32" width="32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g id="Error_1_"><g id="Error"><circle cx="16" cy="16" id="BG" r="16" style="fill:#D72828;"/><path d="M14.5,25h3v-3h-3V25z M14.5,6v13h3V6H14.5z" id="Exclamatory_x5F_Sign" style="fill:#E6E6E6;"/></g></g></g></svg></div>
+          </div>
+          <div class="form-inputs">
+            <input type="text" placeholder="Last Name" required />
+            <p>Last Name cannot be empty</p>
+            <div class="svg"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.0//EN'  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'><svg height="32" style="overflow:visible;enable-background:new 0 0 32 32" viewBox="0 0 32 32" width="32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g id="Error_1_"><g id="Error"><circle cx="16" cy="16" id="BG" r="16" style="fill:#D72828;"/><path d="M14.5,25h3v-3h-3V25z M14.5,6v13h3V6H14.5z" id="Exclamatory_x5F_Sign" style="fill:#E6E6E6;"/></g></g></g></svg></div>
+          </div>
+          <div class="form-inputs">
+            <input type="email" placeholder="Email Address" required />
+            <p>looks like this is not an email</p>
+            <div class="svg"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.0//EN'  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'><svg height="32" style="overflow:visible;enable-background:new 0 0 32 32" viewBox="0 0 32 32" width="32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g id="Error_1_"><g id="Error"><circle cx="16" cy="16" id="BG" r="16" style="fill:#D72828;"/><path d="M14.5,25h3v-3h-3V25z M14.5,6v13h3V6H14.5z" id="Exclamatory_x5F_Sign" style="fill:#E6E6E6;"/></g></g></g></svg></div>
+          </div>
+          <div class="form-inputs">
+            <input type="password" placeholder="Password" required />
+            <p>Password cannot be empty</p>
+            <div class="svg"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.0//EN'  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'><svg height="32" style="overflow:visible;enable-background:new 0 0 32 32" viewBox="0 0 32 32" width="32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g id="Error_1_"><g id="Error"><circle cx="16" cy="16" id="BG" r="16" style="fill:#D72828;"/><path d="M14.5,25h3v-3h-3V25z M14.5,6v13h3V6H14.5z" id="Exclamatory_x5F_Sign" style="fill:#E6E6E6;"/></g></g></g></svg></div>
+          </div>
+          <button type="submit">CLAIM YOUR FREE TRIAL</button>
+          <p>
+            By clicking the button, you are agreeing to our
+            <span>Terms and Services</span>
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <script>
+      let inputElements = document.querySelectorAll("input")
+      let btnElement = document.querySelector("button")
+      let errorMessages = document.querySelectorAll("form div p");
+      let errorIcons = document.querySelectorAll(".svg")
+      console.log(inputElements)
+
+      // function verifyIfInputIsValid(){
+      //   if(inputElements = " "){
+
+      //     for (let i = 0; i < errorIcons.length; i++) {
+      //       const icons = errorIcons[i];
+      //       icons.style.display ="block";
+      //     }
+      //     for (let i = 0; i < errorMessages.length; i++) {
+      //       const errorMessage = errorMessages[i];
+      //       errorMessage.style.display ="block";
+      //     }
+      // }
+      // function removingMarginBottom() {
+      //   for (let i = 0; i < inputElements.length; i++) {
+      //     const inputElement = inputElements[i];
+      //     console.log(inputElement)
+      //     inputElement.style.marginBottom="0px"
+      //   }
+      // }
+
+      // removingMarginBottom()
+
+      // function verifyIfInputIsValid() {
+      //   if (inputElements = " ") {
+      //     for (let i = 0; i < errorIcons.length; i++) {
+      //       const errorIcon = errorIcons[i];
+      //       errorIcon.style.display ="block"
+      //     }
+      //     for (let i = 0; i < errorMessages.length; i++) {
+      //        const errorMessage = errorMessages[i];
+      //        errorMessage.style.display = "block"
+      //     }
+      //     removingMarginBottom()
+      //   }
+      // }
+      // btnElement.addEventListener("click", verifyIfInputIsValid)
+    </script>
+  </body>
+</html>
